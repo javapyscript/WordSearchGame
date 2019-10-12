@@ -10,5 +10,5 @@ c) Ability to hide or show solutions.<br>
 d) Words already found are highlighted separately.<br>
 
 
-Demo gif below:
-![](wordsearch.gif)
+Demo gif below:<br>
+![](wordsearcher.gif)
