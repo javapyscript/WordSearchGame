@@ -11,10 +11,10 @@ RED = (255,0,0)
 ORANGE = (255,127,0)
 YELLOW = (255,255,0)
 WHITE = (255,255,255)
-GREY = (127,127,127)
+GREY = (96, 95, 93)
 BLACK = (0,0,0)
-DARKGREEN = (47, 135, 33)
-LIGHTGREEN = (76, 178, 60)
+DARKGREEN = (75, 175, 179)
+LIGHTGREEN = (93, 223, 227)
 
 fullsize = (600, 700)
 size = (600,600)
@@ -95,23 +95,23 @@ def topBar():
     pygame.draw.line(screen, BLACK, (0, 100), (600, 100), 4)
     pygame.draw.rect(screen, GREY, (0, 600, 600, 700))
 
-    if button.clickButton(360, 620, 160, 50, DARKGREEN, LIGHTGREEN, font, "Reset", BLACK):
+    if button.clickButton(360, 620, 160, 50, DARKGREEN, LIGHTGREEN, font, "Reset", WHITE):
         game.reset(cColumns, cRows)
 
-    if button.clickButton(20, 25, 160, 50, DARKGREEN, LIGHTGREEN, font, "Show solution", BLACK):
+    if button.clickButton(20, 25, 160, 50, DARKGREEN, LIGHTGREEN, font, "Show solution", WHITE):
         for row in board:
             for tile in row:
                 if not tile.isaletter:
                     tile.letter = '.'
 
-    if button.clickButton(190, 25, 160, 50, DARKGREEN, LIGHTGREEN, font, "Hide solution", BLACK):
+    if button.clickButton(190, 25, 160, 50, DARKGREEN, LIGHTGREEN, font, "Hide solution", WHITE):
         for row in board:
             for tile in row:
                 if not tile.isaletter:
                     tile.letter = tile.actual_letter
 
 
-    if button.clickButton(360, 25, 160, 50, DARKGREEN, LIGHTGREEN, font, "Check word", BLACK):
+    if button.clickButton(360, 25, 160, 50, DARKGREEN, LIGHTGREEN, font, "Check word", WHITE):
         new_possible_words = {}
         possible_words = {}
         tiles_found = 0
