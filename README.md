@@ -9,5 +9,7 @@ b) Vertical, horizontal and diagonal word alignment supported.<br>
 c) Ability to hide or show solutions.<br>
 d) Words already found are highlighted separately.<br>
 
+![](wordsearcher.gif)
+
 
 
